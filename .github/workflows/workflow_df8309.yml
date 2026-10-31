@@ -1,0 +1,12 @@
+name: Build and Test
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  deploy-stage:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install dependencies
+        run: echo "finished"
